@@ -18,8 +18,9 @@ public class LoginController{
 	private UserService userService;
     
 	@RequestMapping(value = "/index.html")
-	public String loginPage(){
-		return "login";
+	public ModelAndView loginPage(){
+//		return "login";
+		return new ModelAndView("login");
 	}
 	
 	@RequestMapping(value = "/loginCheck.html")
